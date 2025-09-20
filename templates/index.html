@@ -16,10 +16,10 @@
             <th>Added</th>
             <th>Actions</th>
         </tr>
-        {% for task in tasks %}  <!-- Fixed: 'tasks' not 'taks' -->
+        {% for task in tasks %} 
             <tr>
-                <td>{{ task.content }}</td>  <!-- Fixed: 'task' not 'tasks' -->
-                <td>{{ task.date_created.date() }}</td>  <!-- Now 'task' is defined -->
+                <td>{{ task.content }}</td> 
+                <td>{{ task.date_created.date() }}</td>  
                 <td>
                     <a href="/delete/{{task.id}}">Delete</a>
                     <br>
